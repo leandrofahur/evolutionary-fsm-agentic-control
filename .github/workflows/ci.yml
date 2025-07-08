@@ -35,14 +35,10 @@ jobs:
     - name: Run tests with coverage
       run: pytest --cov=src --cov=tests --cov-report=xml --cov-report=term-missing
     
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v5
       with:
-        file: ./coverage.xml
         token: ${{ secrets.CODECOV_TOKEN }}
-        flags: unittests
-        name: codecov-umbrella
-        fail_ci_if_error: false
 
   security:
     name: Security Check
