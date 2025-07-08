@@ -8,12 +8,16 @@ from pathlib import Path
 
 
 def test_python_version():
-    """Test that we're using Python 3.10+ (minimum for development)."""
+    """
+    Test that we're using Python 3.12+ (minimum for development).
+    """
     assert sys.version_info >= (3, 12), f"Expected Python 3.12+, got {sys.version_info}"
 
 
 def test_project_structure():
-    """Test that essential project files exist."""
+    """
+    Test that essential project files exist.
+    """
     project_root = Path(__file__).parent.parent
 
     # Essential files for CI/CD
@@ -32,7 +36,9 @@ def test_project_structure():
 
 
 def test_linting_tools_available():
-    """Test that linting tools can be imported (they're installed in CI)."""
+    """
+    Test that linting tools can be imported (they're installed in CI).
+    """
     try:
         import ruff
 
@@ -51,7 +57,9 @@ def test_linting_tools_available():
 
 
 def test_testing_framework():
-    """Test that pytest is working correctly."""
+    """
+    Test that pytest is working correctly.
+    """
     # This test validates that pytest can discover and run tests
     assert True, "Pytest is working correctly"
 
@@ -59,7 +67,6 @@ def test_testing_framework():
 def test_placeholder_for_fsm_tests():
     """
     Placeholder test for future FSM functionality.
-    This test will be expanded as you implement the core FSM features.
     """
     # TODO: Replace with actual FSM tests when you implement:
     # - State machine creation
@@ -73,7 +80,6 @@ def test_placeholder_for_fsm_tests():
 def test_placeholder_for_agentic_control():
     """
     Placeholder test for future agentic control functionality.
-    This test will be expanded as you implement the agentic features.
     """
     # TODO: Replace with actual agentic control tests when you implement:
     # - Agent reasoning
@@ -86,5 +92,7 @@ def test_placeholder_for_agentic_control():
 
 # Trigger CI/CD workflow with coverage upload
 def test_ci_cd_coverage_trigger():
-    """Test to trigger CI/CD workflow and coverage upload."""
+    """
+    Test to trigger CI/CD workflow and coverage upload.
+    """
     assert True, "This test ensures CI/CD workflow runs and uploads coverage"
