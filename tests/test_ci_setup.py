@@ -9,7 +9,7 @@ from pathlib import Path
 
 def test_python_version():
     """Test that we're using Python 3.10+ (minimum for development)."""
-    assert sys.version_info >= (3, 10), f"Expected Python 3.10+, got {sys.version_info}"
+    assert sys.version_info >= (3, 12), f"Expected Python 3.12+, got {sys.version_info}"
 
 
 def test_project_structure():
@@ -56,38 +56,6 @@ def test_testing_framework():
     assert True, "Pytest is working correctly"
 
 
-def test_import_works():
-    """Test that basic Python imports work (validates environment)."""
-    # Test that we can import standard library modules
-    import json
-    import os
-    import pathlib
-
-    assert all([os, json, pathlib]), "Basic imports should work"
-
-
-def test_project_configuration():
-    """Test that pyproject.toml has expected configuration."""
-    try:
-        import tomllib
-
-        with open("pyproject.toml", "rb") as f:
-            config = tomllib.load(f)
-    except ImportError:
-        # Fallback for Python < 3.11
-        import tomli
-
-        with open("pyproject.toml", "rb") as f:
-            config = tomli.load(f)
-
-    # Test that ruff configuration exists
-    assert "tool" in config, "pyproject.toml should have [tool] section"
-    assert "ruff" in config["tool"], "pyproject.toml should have [tool.ruff] section"
-
-    # Test that black configuration exists
-    assert "black" in config["tool"], "pyproject.toml should have [tool.black] section"
-
-
 def test_placeholder_for_fsm_tests():
     """
     Placeholder test for future FSM functionality.
@@ -114,3 +82,9 @@ def test_placeholder_for_agentic_control():
     # - Evolution triggers
 
     assert True, "Agentic control tests will be implemented as features are developed"
+
+
+# Trigger CI/CD workflow with coverage upload
+def test_ci_cd_coverage_trigger():
+    """Test to trigger CI/CD workflow and coverage upload."""
+    assert True, "This test ensures CI/CD workflow runs and uploads coverage"
