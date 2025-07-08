@@ -1,5 +1,10 @@
 # Evolutionary FSM with Agentic Control
 
+<!-- [![CI/CD Pipeline](https://github.com/ufmg/evolutionary-fsm-agentic-control/actions/workflows/ci.yml/badge.svg)](https://github.com/ufmg/evolutionary-fsm-agentic-control/actions/workflows/ci.yml) -->
+[![Code Coverage](https://codecov.io/gh/ufmg/evolutionary-fsm-agentic-control/branch/main/graph/badge.svg)](https://codecov.io/gh/ufmg/evolutionary-fsm-agentic-control)
+[![Python Version](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
+[![Project Version](https://img.shields.io/badge/version-0.1.0-green.svg)](https://github.com/ufmg/evolutionary-fsm-agentic-control/releases)
+
 > A local, self-evolving control framework where an adaptive agent can modify the finite state machine’s topology (states + transitions) based on reasoning, feedback, and/or observation.
 
 ## Motivation
