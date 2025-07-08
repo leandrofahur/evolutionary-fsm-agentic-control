@@ -1,7 +1,7 @@
 # Evolutionary FSM with Agentic Control
 
 <!-- [![CI/CD Pipeline](https://github.com/ufmg/evolutionary-fsm-agentic-control/actions/workflows/ci.yml/badge.svg)](https://github.com/ufmg/evolutionary-fsm-agentic-control/actions/workflows/ci.yml) -->
-[![Code Coverage](https://codecov.io/gh/ufmg/evolutionary-fsm-agentic-control/branch/main/graph/badge.svg)](https://codecov.io/gh/ufmg/evolutionary-fsm-agentic-control)
+[![codecov](https://codecov.io/github/leandrofahur/evolutionary-fsm-agentic-control/graph/badge.svg?token=YR9K32XX5X)](https://codecov.io/github/leandrofahur/evolutionary-fsm-agentic-control)
 [![Python Version](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
 [![Project Version](https://img.shields.io/badge/version-0.1.0-green.svg)](https://github.com/ufmg/evolutionary-fsm-agentic-control/releases)
 
