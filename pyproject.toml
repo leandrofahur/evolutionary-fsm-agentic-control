@@ -5,6 +5,7 @@ indent-width = 4
 fix = true
 exclude = ["build", "dist", ".venv", ".mypy_cache", ".ruff_cache"]
 
+[tool.ruff.lint]
 select = [
     "E",   # pycodestyle errors
     "F",   # pyflakes

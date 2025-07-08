@@ -59,6 +59,13 @@ $ git checkout dev
 $ git checkout -b <branch_prefix>/<functionality>
 ```
 
+### Run Linting and Formatting
+```bash
+ruff check .          # Check code
+ruff check . --fix    # Auto-fix lint issues
+black .               # Format code
+```
+
 ## Contributors
 🚧
 
